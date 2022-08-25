@@ -1,28 +1,20 @@
-#instituto nacional de nuevo laredo
-nombre "jose guadalupe santos sanchez"
+#PRESENTACION
+### jose guadalupe santos sanchez 
 
-escuela primaria
-leona vicario 
+**HISTORAL ACADEMICO**
 
-secundaria secundaria tecnica 57 santiago m.belden 
+1. PRIMARIA: *leona vicario*
+2. SECUNDARIA: *tecnica 57* 
+3. PREPARATORIA: *conalep 246 * 
+4. CARRERA: *TECNM PLANTEL NUEVO LAREDO*
 
-preparatoria conalep 246
+### **EXPERIENCIA LABORAL**
 
-universidad cursando en el tecnnm
+|LUGAR|PUESTO|TIEMPO |
+-----------|------|--------|
+|cafeteria conalep|venta o caja|5meses|
+|WIEGAND|operario mediotiempo |4 Años|
 
-trabajos 
-wigan 4 años trabajando de operario 
-
-lenguaje que domino c#,c++ java 70% 
-
-me gustaria aprender  payton
-
-me gustaria especializarme en redes 
-
-mis pasatiempos son 
-voleibol,futbol, escuchar musica y mecanica automotriz
-
-
-
-
-numero de control "18100496"
+**LENGUAJES DE PROGRAMACION DOMINADOS**
+- C#
+- JAVA
