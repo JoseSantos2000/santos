@@ -1,0 +1,25 @@
+body
+{
+font-family: 'Mulish', sans-serif;
+background-color: darkblue;
+}
+table
+{
+    width: 80%;
+    height: 150px;
+    background-color: black;
+}
+th
+{
+    background-color: red;color: indigo;
+}
+tr
+{
+    color:aliceblue;
+}
+tr :hover
+{
+    font-size: 30px;
+    color:blue;
+    background-color: lawngreen;
+}
