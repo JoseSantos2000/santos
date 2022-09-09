@@ -1,0 +1,65 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: black ;
+}
+ul
+{
+    list-style: none;
+    width: 200px;
+    height: 500px;
+}
+ul > li > ul
+{
+    display: none;
+}
+ul > li:hover > ul
+{
+    display: block;
+    height: 100%;
+}
+
+.subopcion
+{
+    padding-left: 20px;
+    background-color: gray;
+    color: aliceblue;
+}
+div.opcion1
+{
+    background-color: blue;
+    color: aqua;
+    position: sticky;
+    font-size: 40px;
+    top:12px;
+    left: 400px;
+    width: 15px;
+    height: 15px;
+}
+div.opcion2
+{
+    background-color: red;
+    color:pink; 
+    position: sticky;
+    font-size: 40px;
+    bottom: 600px;
+    left: 600px;
+    width: 15px;
+    height: 15px;
+}
+div.opcion3
+{
+    background-color: green;
+    color:chartreuse;
+    position: sticky;
+    font-size: 40px;
+    bottom: 600px;
+    left: 800px;
+    width: 15px;
+    height: 15px;
+}
