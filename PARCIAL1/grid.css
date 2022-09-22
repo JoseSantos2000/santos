@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.contenedor {
+    width:100vw;
+    height:100vh;
+    background-color: blue;
+
+    display:grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas : 'encabezado encabezado'
+                          'barralat contenido'
+                          'piepagina piepagina';
+}
+
+.caja {
+    background-color:aqua;
+    text-align:center;
+    border: 1px solid red;
+}
+
+#encabezado { grid-area: encabezado; background-color: forestgreen;}
+#barralat   { grid-area: barralat;   background-color: aquamarine;}
+#contenido  { grid-area: contenido;  background-color: blueviolet;}
+#piepagina  { grid-area: piepagina;  background-color: brown;}
+
+#encabezado:hover
+{
+    background-color: aquamarine;
+}
+#barralat:hover
+{
+    background-color: black;color: chartreuse;
+}
+#contenido:hover
+{
+    background-color: chartreuse;
+}
+#piepagina:hover
+{
+    background-color: wheat;
+}
