@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: 'encabezado contenido  piepagina'
+        'barralat barralat piepagina';
+}
+
+.caja {
+    display:flex;   
+    font-size:2em;
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center;
+}
+
+#encabezado {
+    grid-area: encabezado;
+    background-color: forestgreen;
+}
+
+#barralat {
+    grid-area: barralat;
+    background-color: aquamarine;
+}
+
+#contenido {
+    grid-area: contenido;
+    background-color: blueviolet;
+}
+
+#piepagina {
+    grid-area: piepagina;
+    background-color: brown;
+}
+
+@media screen and (max-width:900px) {
+    .contenedor {
+        display: grid;
+        grid-template-rows: 30% 35% 35%;
+        grid-template-columns: 80% 20%;
+        grid-template-areas: 'encabezado barralat'
+                             'contenido barralat'
+                             'piepagina barralat';
+    }
+}
+#encabezado:hover
+{
+    background-color: aquamarine;
+}
+#barralat:hover
+{
+    background-color: black;color: chartreuse;
+}
+#contenido:hover
+{
+    background-color: chartreuse;
+}
+#piepagina:hover
+{
+    background-color: wheat;
+}
