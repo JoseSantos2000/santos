@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="fiexbox.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fiexbox</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja">caja 1</div>
+        <div class="caja">caja 2</div>
+        <div class="caja">caja 3</div>
+        <div class="caja">caja 4</div>
+    </div>
+     <!-- En la propiedad HTML -->
+     <button id="miBoton1" onclick="alert('Click en Boton 1')"> Hola Mundo 1 </button>
+
+     <button id="miBoton2"> Hola Mundo 2</button>
+ 
+     <button id="miBoton3"> Hola Mundo 3</button>
+ 
+     <script>
+     // En las propiedades del elemento en el DOM
+     document.getElementById("miBoton2").onclick = function() { alert("Click en Boton 2") };
+ 
+     // Usando adEventListener()
+     document.querySelector('#miBoton3').addEventListener("click",miFuncion2);
+     document.querySelector('#miBoton3').addEventListener("click",miFuncion1);
+ 
+     function miFuncion1() { alert("Click en Boton 3 / Funcion 1");}
+     function miFuncion2() { alert('Click en Boton 3 / Funcion 2');}
+     </script>
+</body>
+</html>
