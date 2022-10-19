@@ -5,4 +5,11 @@ window.onload = function() {
         document.getElementById("sb").classList.toggle("MenuEscondido");
         document.getElementById("ct").classList.toggle("ContenidoMargenCero");
     }
-}
+}/*
+window.onload=function()
+{
+    document.getElementById("btnMenu").addEventListener("click",function()
+    {
+        document.getElementById("barralat").classList.toggle("escondido");
+    })
+}*/
