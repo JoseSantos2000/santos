@@ -1,0 +1,26 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor
+{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.caja
+{
+    background-color: chartreuse;
+    color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    text-align: center;
+}
