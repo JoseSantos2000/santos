@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio en Clase: GridJS (18100248) </title>
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+</head>
+<style>
+    .encabezado
+    {
+        border: 5px solid red;
+        text-align: center;
+        font-family: Arial;
+    }
+</style>
+<body>
+    <div class="encabezado">
+       
+        <h2>Jose Guasdalupe Santos Sanchez - 18100496</h2>
+    </div>
+    <div id="wrapper" class="wrapper"></div>
+
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script>
+
+        async function traerDatos() {
+            let headersList =
+            {
+                "Accept": "*/*",
+            }
+
+            let response = await fetch("http://localhost/santos/PARCIAL3/gridjs/gridJs.php", {
+                method: "GET",
+                headers: headersList
+            });
+
+            let registroempleados = await response.json();
+            console.log(registroempleados);
+
+            new gridjs.Grid({
+                columns: ["IdEmpleado","Nombre","Nombre2","Apellido","Apellido2","Puesto","Telefono","Sexo"],
+                data: registroempleados
+            }).render(document.getElementById("wrapper"));
+        }
+        
+        traerDatos();
+        
+    </script>
+</body>
+
+</html>
